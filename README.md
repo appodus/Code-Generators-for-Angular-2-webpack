@@ -3,10 +3,19 @@
 This is an ultra-simple cli tool for generating Angular2 component, directive, service and pipe scaffolding, with naming conventions 
 taken from the [Angular 2 Style Guide](https://angular.io/styleguide)
 
-This project is the extension of michaelbromley/cmpg and is inspired by angular-cli.
+This project is an extension of [michaelbromley/cmpg](https://github.com/michaelbromley/cmpg) and is inspired by [angular-cli](https://github.com/angular/angular-cli).
 
 ### Templates
 Currently the templates for a webpack-based build using Sass for styles. A good enhancement would be to somehow allow different template files to be specified.
+
+Sass-loader configuration for webpack project:
+`
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        loader: 'to-string!css-loader!postcss-loader!sass-loader'
+      }
+      `
 
 ### Usage
 
@@ -62,7 +71,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'foo-selector',
   template: require('./foo-selector.component.html'),
-  styles: [require('./foo-selector.scss').toString()]
+  styles: [require('./foo-selector.scss')]
 })
 export class FooSelectorComponent {
 }
