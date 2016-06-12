@@ -19,7 +19,7 @@ Sass-loader configuration for webpack project:
 
 ### Usage
 ```bash
-npm install --g ng2g
+npm install -g ng2g
 ```
 Requires Node v4+
 
