@@ -1,0 +1,20 @@
+import {
+    it,
+    describe,
+    expect,
+    inject,
+    beforeEachProviders
+} from '@angular/core/testing';
+
+{{=<% %>=}}
+import {<%className%>} from './<%dirName%>.pipe';
+<%={{ }}=%>
+
+describe('{{className}}', () => {
+    beforeEachProviders(() => [{{className}}]);
+
+    it('should transform the input', inject([{{className}}], (pipe: {{className}}) => {
+        expect(pipe.transform(true)).toBe(null);
+    }));
+});
+

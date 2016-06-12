@@ -12,5 +12,9 @@ module.exports = {
 		function capitalizeFirstLetter(string) {
 			return string.charAt(0).toUpperCase() + string.slice(1);
 		}
+	},
+
+	pascalToKebab: (string) =>{
+		return string.split(/(?=[A-Z])/).join(' ').toLowerCase().replace(' ', '-');
 	}
 };

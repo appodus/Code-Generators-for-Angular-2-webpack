@@ -1,6 +1,6 @@
 /**
  *
- * @returns {createComponent}
+ * Component generator.
  */
 
 const fs = require('fs');
@@ -8,12 +8,12 @@ const mustache = require('mustache');
 const path = require('path');
 const helper = require('./helper');
 
-module.exports = function createComponent() {
+module.exports = () => {
 	var htmlTemplate = fs.readFileSync(path.join(__dirname, './templates/component-webpack/html.mustache'), 'utf8');
 	var typescriptTemplate = fs.readFileSync(path.join(__dirname, './templates/component-webpack/typescript.mustache'), 'utf8');
 	var sassTemplate = fs.readFileSync(path.join(__dirname, './templates/component-webpack/sass.mustache'), 'utf8');
 	var testsTemplate = fs.readFileSync(path.join(__dirname, './templates/component-webpack/tests.mustache'), 'utf8');
-	
+
 	var componentName = process.argv[3];
 	if (!componentName) {
 		console.log('Error: No component name specified. Correct syntax is `cmpg my-component-name`');
@@ -38,5 +38,5 @@ module.exports = function createComponent() {
 		console.log('An error occurred!', e);
 	}
 
-	console.log(`Created the ${componentName} component in the current directory.`);
+	console.log(`Created the ${componentName} component in the ${componentName} directory.`);
 }

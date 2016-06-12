@@ -1,7 +1,7 @@
 {
   "name": "ng2g",
   "version": "0.0.3",
-  "description": "A super simple scaffolding tool for Angular 2 components, directives, service and pipes, extended from cmpg by Michael Bromley <michael@michaelbromley.co.uk>",
+  "description": "A super simple scaffolding tool for Angular 2 components, directives, service and pipes, extended from cmpg by Michael Bromley <michael@michaelbromley.co.uk>, inspired by angular-cli",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
