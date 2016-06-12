@@ -14,7 +14,7 @@ module.exports = {
 		}
 	},
 
-	pascalToKebab: (string) =>{
-		return string.split(/(?=[A-Z])/).join(' ').toLowerCase().replace(' ', '-');
+	pascalToKebab: (string) =>{		
+		return string.split(/(?=[A-Z])/).join(' ').toLowerCase().split(' ').join('-');
 	}
 };

@@ -16,12 +16,12 @@ module.exports = () => {
 	
 	var pipeName = process.argv[3];
 	if (!pipeName) {
-		console.log('Error: No pipe name specified. Correct syntax is `ng2g pipe pipeName`');
+		console.log('Error: No pipe name specified. Correct syntax is `ng2g pipe pipeName|PipeName`');
 		process.exit(1);
 	}
 
 	if (pipeName.indexOf('-') !== -1) {
-		console.log('Error: please use camel or pascal case for pipeName');
+		console.log('Error: please use camel or pascal case for pipe name');
 		process.exit(1);
 	}
 
@@ -43,5 +43,5 @@ module.exports = () => {
 		console.log('An error occurred!', e);
 	}
 	
-	console.log(`Created the ${pipeName} pipe in the ${dirName} directory.`);
+	console.log(`Created the "${pipeName}" pipe in the "${dirName}" directory.`);
 };
