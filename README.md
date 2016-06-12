@@ -21,16 +21,6 @@ Sass-loader configuration for webpack project:
 ```bash
 npm install -g ng2g
 ```
-Requires Node v4+
-
-But it can be used like this:
-
-1. Clone this repo.
-2. `cd [repo dir]`
-3. `npm install -g .`
-4. Go to the new component location, e.g. `myapp/src/components`
-3. `ng2g component my-component`, this will generate four files my-component.component.ts|html|scss|spec.ts in a newly generated folder namely 'my-component' in the current directory.
-
 #### Component Generator
 
 `> ng2g component component-selector`, use kebab case for the component selector.
