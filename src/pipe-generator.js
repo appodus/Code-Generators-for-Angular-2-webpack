@@ -25,7 +25,7 @@ module.exports = () => {
 		process.exit(1);
 	}
 
-	var className = pipeName.charAt(0).toUpperCase() + pipeName.slice(1);
+	var className = pipeName.charAt(0).toUpperCase() + pipeName.slice(1) + 'Pipe';
 	var dirName = helper.pascalToKebab(pipeName);
 	pipeName = pipeName.charAt(0).toLowerCase() + pipeName.slice(1);
 

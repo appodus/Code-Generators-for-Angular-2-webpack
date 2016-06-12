@@ -24,7 +24,7 @@ module.exports = () => {
 		process.exit(1);
 	}
 
-	var className = serviceName.charAt(0).toUpperCase() + serviceName.slice(1);
+	var className = serviceName.charAt(0).toUpperCase() + serviceName.slice(1) + 'Service';
 	var dirName = helper.pascalToKebab(serviceName);
 
 	var context = {className, dirName};
