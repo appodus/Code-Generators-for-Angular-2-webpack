@@ -29,7 +29,7 @@ But it can be used like this:
 2. `cd [repo dir]`
 3. `npm install -g .`
 4. Go to the new component location, e.g. `myapp/src/components`
-3. `ng2g component my-component`, all generated files will be in a created new folder in the current directory.
+3. `ng2g component my-component`, this will generate four files my-component.component.ts|html|css|spec.ts in a newly generated folder namely 'my-component' in the current directory.
 
 #### Component Generator
 
