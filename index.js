@@ -12,7 +12,7 @@ const generatePipe = require('./src/pipe-generator');
 const modes = ['component', 'directive', 'service', 'pipe'];
 const mode = process.argv[2];
 if (!mode || modes.indexOf(mode) === -1) {
-	console.log('Error: Correct syntax is `ng2g component|directive|service|pipe component-selector|directive-selector|ServiceClass|pipe-selector');
+	console.log('Error: Correct syntax is `ng2g component|directive|service|pipe component-selector|directiveName|ServiceName|PipeName`');
 } else {
 	switch (mode){
 		case modes[0]:
