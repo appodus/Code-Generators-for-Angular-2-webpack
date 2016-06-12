@@ -1,15 +1,15 @@
 {
-  "name": "cmpg",
-  "version": "0.0.2",
-  "description": "A super simple scaffolding tool for Angular 2 components",
+  "name": "ng2g",
+  "version": "0.0.3",
+  "description": "A super simple scaffolding tool for Angular 2 components, directives, service and pipes, extended from cmpg by Michael Bromley <michael@michaelbromley.co.uk>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "cmpg": "./index.js"
+    "ng2g": "./index.js"
   },
-  "author": "Michael Bromley <michael@michaelbromley.co.uk>",
+  "author": "Rex Ye <rexebin@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "mustache": "^2.2.1"
