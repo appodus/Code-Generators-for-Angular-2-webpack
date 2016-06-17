@@ -11,40 +11,41 @@ This project is an extension of [michaelbromley/cmpg](https://github.com/michael
 Currently the templates for a webpack-based build using Sass for styles. A good enhancement would be to somehow allow different template files to be specified.
 
 Sass-loader configuration for webpack project:
-`
-      {
+```
+    {
         test: /\.scss$/,
         exclude: /node_modules/,
         loader: 'to-string!css-loader!postcss-loader!sass-loader'
-      }
-      `
+    }
+```
 
 ### Usage
 ```bash
-npm install -g ng2g
+npm install -g ng-wp
 ```
 #### Component Generator
 
-`> ng2g component component-selector`, use kebab case for the component selector.
+`> ng-wp component component-name`
+`> ng-wp lazy-component component-name`: generate a component in a new folder `+component-name`.
 
 #### Service Generator
 
-`> ng2g service ServiceName`, use pascal or camel case for the service name.
+`> ng-wp service service-name`
 
 #### Pipe Generator
 
-`> ng2g pipe pipeName`, use pascal or camel case for the pipe name.
+`> ng-wp pipe pipe-name`
 
 #### Directive Generator
 
-`> ng2g directive directiveName`, use pascal or camel case for the directive name.
+`> ng-wp directive directive-name`
 
 #### Example
 
 That will generate a TypeScript component, test, HTML and Sass file named according to
 the argument passed:
 
-`> ng2g component foo-selector`
+`> ng-wp component foo-selector`
 
 result:
 
@@ -72,6 +73,8 @@ export class FooSelectorComponent {
 If the templates are not to your liking, just go in `templates/` and
 edit away. Make sure to run step 2 again after making any changes.
 
-That's it.
+Github: https://github.com/rexebin/Code-Generators-for-Angular-2-webpack
 
 License: MIT
+
+
