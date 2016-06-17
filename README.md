@@ -24,22 +24,24 @@ Special note: to compile the sass into css and then load the content as string t
 npm install -g ng-wp
 ```
 #### Component Generator
-
+```bash
 `> ng-wp component component-name`
+```
+```bash
 `> ng-wp lazy-component component-name`: generate a component in a new folder `+component-name`.
-
+```
 #### Service Generator
-
+```bash
 `> ng-wp service service-name`
-
+```
 #### Pipe Generator
-
+```bash
 `> ng-wp pipe pipe-name`
-
+```
 #### Directive Generator
-
+```bash
 `> ng-wp directive directive-name`
-
+```
 #### Example
 
 That will generate a TypeScript component, test, HTML and Sass file named according to
