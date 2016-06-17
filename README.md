@@ -8,9 +8,9 @@ What is the difference between this generator and angular-cli? The anwser is tha
 This project is an extension of [michaelbromley/cmpg](https://github.com/michaelbromley/cmpg) and is inspired by [angular-cli](https://github.com/angular/angular-cli).
 
 ### Templates
-Currently the templates for a webpack-based build using Sass for styles. A good enhancement would be to somehow allow different template files to be specified.
+The templates for a webpack-based build using Sass for styles.
 
-Sass-loader configuration for webpack project:
+Special note: to compile the sass into css and then load the content as string to component in ng2 component, so that ng2's view encapsulation can work as intended:
 ```
     {
         test: /\.scss$/,
