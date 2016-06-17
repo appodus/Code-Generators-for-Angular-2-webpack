@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/ng-wp.svg)](https://badge.fury.io/js/ng-wp)
 # Code Generators for Angular 2 - Webpack project
 
 This is an ultra-simple cli tool for generating Angular2 component, directive, service and pipe scaffolding, with naming conventions 
