@@ -6,9 +6,8 @@ import {
     beforeEachProviders
 } from '@angular/core/testing';
 
-{{=<% %>=}}
-import {<%className%>} from './<%dirName%>.pipe';
-<%={{ }}=%>
+import { {{className}} } from './{{pipeNameKebab}}.pipe';
+
 
 describe('{{className}}', () => {
     beforeEachProviders(() => [{{className}}]);

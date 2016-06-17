@@ -1,5 +1,5 @@
 {
-  "name": "ng2g",
+  "name": "ng2-wp",
   "version": "0.0.4",
   "description": "A super simple scaffolding tool for Angular 2 components, directives, service and pipes",
   "main": "index.js",

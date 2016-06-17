@@ -10,11 +10,11 @@ import {
 } from '@angular/core/testing';
 import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
 import { provide, Component } from '@angular/core';
-import { {{className}} } from './{{dirName}}.directive';
+import { {{className}} } from './{{directiveName}}.directive';
 
 @Component({
     selector: 'test-component',
-    template: `<div {{dirName}}></div>`,
+    template: `<div {{directiveName}}></div>`,
     directives: [{{className}}]
 })
 class TestComponent {}
