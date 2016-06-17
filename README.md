@@ -42,13 +42,12 @@ npm install -g ng-wp
 ```bash
 `> ng-wp directive directive-name`
 ```
-#### Example
+### Example
 
-That will generate a TypeScript component, test, HTML and Sass file named according to
-the argument passed:
-
+That will generate a TypeScript component, test, HTML and Sass file named according to the argument passed:
+```bash
 `> ng-wp component foo-selector`
-
+```
 result:
 
 ```
@@ -72,10 +71,15 @@ export class FooSelectorComponent {
 }
 ```
 
-If the templates are not to your liking, just go in `templates/` and
-edit away. Make sure to run step 2 again after making any changes.
-
 Github: https://github.com/rexebin/Code-Generators-for-Angular-2-webpack
+
+If the templates are not to your liking, then fork the repository, go in `/src/templates/` and
+edit away, then install your local version globally:
+```bash
+`> npm i -g`
+```
+
+You can also create a pull request if you think your templates are better.
 
 License: MIT
 
