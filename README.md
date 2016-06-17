@@ -25,28 +25,29 @@ npm install -g ng-wp
 ```
 #### Component Generator
 ```bash
-`> ng-wp component component-name`
+ng-wp component component-name
 ```
+Generate a component in a new folder `+component-name`:
 ```bash
-`> ng-wp lazy-component component-name`: generate a component in a new folder `+component-name`.
+ng-wp lazy-component component-name
 ```
 #### Service Generator
 ```bash
-`> ng-wp service service-name`
+ng-wp service service-name
 ```
 #### Pipe Generator
 ```bash
-`> ng-wp pipe pipe-name`
+ng-wp pipe pipe-name
 ```
 #### Directive Generator
 ```bash
-`> ng-wp directive directive-name`
+ng-wp directive directive-name
 ```
 ### Example
 
 That will generate a TypeScript component, test, HTML and Sass file named according to the argument passed:
 ```bash
-`> ng-wp component foo-selector`
+ng-wp component foo-selector
 ```
 result:
 
@@ -76,7 +77,7 @@ Github: https://github.com/rexebin/Code-Generators-for-Angular-2-webpack
 If the templates are not to your liking, then fork the repository, go in `/src/templates/` and
 edit away, then install your local version globally:
 ```bash
-`> npm i -g`
+npm i -g
 ```
 
 You can also create a pull request if you think your templates are better.
