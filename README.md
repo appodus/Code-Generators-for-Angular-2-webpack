@@ -60,6 +60,7 @@ result:
   |- foo-selector.component.spec.ts
   |- foo-selector.component.html
   |- foo-selector.scss
+  |- index.ts
 ```
 
 The TypeScript file will look like this:
