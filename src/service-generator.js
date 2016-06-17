@@ -12,6 +12,7 @@ const helper = require('./helper');
 module.exports = () => {
     var typescriptTemplate = fs.readFileSync(path.join(__dirname, './templates/service-webpack/typescript.mustache'), 'utf8');
     var testsTemplate = fs.readFileSync(path.join(__dirname, './templates/service-webpack/tests.mustache'), 'utf8');
+    var indexTemplate = fs.readFileSync(path.join(__dirname, './templates/service-webpack/index.mustache'), 'utf8');
 
     var serviceName = process.argv[3];
     if (!serviceName) {
@@ -32,7 +33,7 @@ module.exports = () => {
 
         fs.writeFile(`${serviceName}/${serviceName}.service.ts`, mustache.render(typescriptTemplate, context));
         fs.writeFile(`${serviceName}/${serviceName}.service.spec.ts`, mustache.render(testsTemplate, context));
-
+        fs.writeFile(`${serviceName}/index.ts`, mustache.render(indexTemplate, context));
 
         console.log(`Created the "${serviceName}" service in the "${serviceName}" directory.`);
     }

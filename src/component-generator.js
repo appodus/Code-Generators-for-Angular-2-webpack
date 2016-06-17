@@ -13,6 +13,7 @@ module.exports = (isLazy) => {
     var typescriptTemplate = fs.readFileSync(path.join(__dirname, './templates/component-webpack/typescript.mustache'), 'utf8');
     var sassTemplate = fs.readFileSync(path.join(__dirname, './templates/component-webpack/sass.mustache'), 'utf8');
     var testsTemplate = fs.readFileSync(path.join(__dirname, './templates/component-webpack/tests.mustache'), 'utf8');
+    var indexTemplate = fs.readFileSync(path.join(__dirname, './templates/component-webpack/index.mustache'), 'utf8');
 
     var componentName = process.argv[3];
     if (!componentName) {
@@ -37,6 +38,7 @@ module.exports = (isLazy) => {
         fs.writeFile(`${dirName}/${componentName}.component.html`, mustache.render(htmlTemplate, context));
         fs.writeFile(`${dirName}/${componentName}.scss`, mustache.render(sassTemplate, context));
         fs.writeFile(`${dirName}/${componentName}.component.spec.ts`, mustache.render(testsTemplate, context));
+        fs.writeFile(`${dirName}/index.ts`, mustache.render(indexTemplate, context));
         console.log(`Created the ${componentName} ${isLazy ? 'lazy ' : ''}component in the ${dirName} directory.`);
     }
 

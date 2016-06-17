@@ -2,9 +2,9 @@ import {beforeEach, beforeEachProviders, describe, expect, it, inject} from '@an
 import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
 import {Component} from '@angular/core';
 import {By} from '@angular/platform-browser';
-{{=<% %>=}}
-import {<%className%>} from './<%componentName%>.component';
-<%={{ }}=%>
+
+import { {{className}} } from './{{componentName}}.component';
+
 
 describe('{{className}}:', () => {
 

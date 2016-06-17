@@ -13,6 +13,7 @@ const helper = require('./helper');
 module.exports = () => {
     var typescriptTemplate = fs.readFileSync(path.join(__dirname, './templates/pipe-webpack/typescript.mustache'), 'utf8');
     var testsTemplate = fs.readFileSync(path.join(__dirname, './templates/pipe-webpack/tests.mustache'), 'utf8');
+    var indexTemplate = fs.readFileSync(path.join(__dirname, './templates/pipe-webpack/index.mustache'), 'utf8');
 
     var pipeNameKebab = process.argv[3];
     if (!pipeNameKebab) {
@@ -35,6 +36,7 @@ module.exports = () => {
     function createFiles() {
         fs.writeFile(`${pipeNameKebab}/${pipeNameKebab}.pipe.ts`, mustache.render(typescriptTemplate, context));
         fs.writeFile(`${pipeNameKebab}/${pipeNameKebab}.pipe.spec.ts`, mustache.render(testsTemplate, context));
+        fs.writeFile(`${pipeNameKebab}/index.ts`, mustache.render(indexTemplate, context));
         console.log(`Created the "${pipeNameKebab}" pipe in the "${pipeNameKebab}" directory.`);
     }
 
