@@ -72,8 +72,6 @@ export class FooSelectorComponent {
 }
 ```
 
-Github: https://github.com/rexebin/Code-Generators-for-Angular-2-webpack
-
 If the templates are not to your liking, then fork the repository, go in `/src/templates/` and
 edit away, then install your local version globally:
 ```bash
@@ -81,6 +79,10 @@ npm i -g
 ```
 
 You can also create a pull request if you think your templates are better.
+
+Github: https://github.com/rexebin/Code-Generators-for-Angular-2-webpack
+
+Maintained by [Rex](mailTo:rexebin@gmail.com) and [asnowwolf](@asnowwolf@gmail.com)
 
 License: MIT
 
