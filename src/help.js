@@ -3,20 +3,17 @@
  */
 /**
  *
- * Component generate.
+ * Help command.
  */
 
-const fs = require('fs');
-const mustache = require('mustache');
-const path = require('path');
 const helper = require('./helper');
 
 
 module.exports = () => {
 
   console.log(`
-    This generator will generate component, lazy loading component, services, pipes and directives. It can be used anywhere.
-    It will create a new folder for the generated files. Please make sure that the folder is not exist under current folder.
+    This generator will generate components, lazy loading components, services, pipes and directives. 
+    It creates a new folder for the generated files. Please make sure that the folder does not exist under current folder.
     
     Usage:
     '${helper.name} component my-component-name'      :   generate a new component in new folder 'my-component-name'
@@ -25,7 +22,7 @@ module.exports = () => {
     '${helper.name} pipe my-pipe-name'                :   generate a new pipe in new folder 'my-pipe-name'
     '${helper.name} directive my-directive-name'      :   generate a new directive in new folder 'my-directive-name'
        
-    Use kebab case for names.    
+    Use kebab-case for names.
     `)
 
 };

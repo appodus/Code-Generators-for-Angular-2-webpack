@@ -2,7 +2,7 @@
  * Created by Rex on 12/06/2016.
  */
 /**
- * Service generate.
+ * Service generator.
  */
 const fs = require('fs');
 const mustache = require('mustache');

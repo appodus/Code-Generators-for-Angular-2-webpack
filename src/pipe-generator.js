@@ -3,7 +3,7 @@
  */
 
 /**
- * Pipe generate.
+ * Pipe generator.
  */
 const fs = require('fs');
 const mustache = require('mustache');
