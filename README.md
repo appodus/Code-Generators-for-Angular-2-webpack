@@ -82,7 +82,7 @@ You can also create a pull request if you think your templates are better.
 
 Github: https://github.com/rexebin/Code-Generators-for-Angular-2-webpack
 
-Maintained by [Rex](mailTo:rexebin@gmail.com) and [asnowwolf](@asnowwolf@gmail.com)
+Maintained by [Rex](https://github.com/rexebin) and [asnowwolf](https://github.com/asnowwolf)
 
 License: MIT
 
