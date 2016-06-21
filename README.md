@@ -15,7 +15,7 @@ The templates for a webpack-based build using Sass for styles.
 
 #### Install and Config Webpack Loaders
 
-##### sass loader
+##### sass loader configuration
 To compile the sass into css and then load the content as string to component in ng2 component, so that ng2's view encapsulation can work as intended:
 ```
     {
@@ -25,7 +25,7 @@ To compile the sass into css and then load the content as string to component in
     }
 ```
 
-##### angular2 template loader
+##### angular2 template loader configuration
 In component template, there is no need of `require` for template and styles, thanks to [TheLarkInn/angular2-template-loader](https://github.com/TheLarkInn/angular2-template-loader) which make it possible.
 
 The way Angular2-template-loader works is before the ts loader get the ts file for compiling, it replaces `templateUrl:'my-component.component.html'` with `template: require('my-component.component.html')` and `styleUrls:['my-component.component.scss']` with `styles:[require('my-component.component.scss')]`, so that we do not have to type require all the time.
