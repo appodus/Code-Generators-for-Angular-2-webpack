@@ -13,7 +13,7 @@ This project is an extension of [michaelbromley/cmpg](https://github.com/michael
 ### Templates
 The templates for a webpack-based build using Sass for styles.
 
-#### Install and Config Webpack Loaders
+#### Install and Configure Webpack Loaders
 
 ##### sass loader configuration
 To compile the sass into css and then load the content as string to component in ng2 component, so that ng2's view encapsulation can work as intended:
