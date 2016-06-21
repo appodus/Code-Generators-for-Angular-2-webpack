@@ -1,6 +1,6 @@
 {
   "name": "ng-wp",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A super simple scaffolding tool for Angular 2 components, directives, service and pipes, designed for Webpack projects",
   "main": "index.js",
   "scripts": {
