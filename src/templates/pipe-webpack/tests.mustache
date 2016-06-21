@@ -1,19 +1,22 @@
 import {
-    it,
-    describe,
-    expect,
-    inject,
-    beforeEachProviders
+  it,
+  describe,
+  expect,
+  inject,
+  beforeEachProviders
 } from '@angular/core/testing';
 
 import { {{className}} } from './{{pipeNameKebab}}.pipe';
 
-
 describe('{{className}}', () => {
-    beforeEachProviders(() => [{{className}}]);
 
-    it('should transform the input', inject([{{className}}], (pipe: {{className}}) => {
-        expect(pipe.transform(true)).toBe(null);
-    }));
+  let pipe: {{className}};
+  beforeEachProviders(() => [{{className}}]);
+  beforeEach(inject([{{className}}], (_pipe: {{className}}) => {
+    pipe = _pipe;
+  }));
+
+  it('should transform the input', () => {
+    expect(pipe.transform(true)).toBeNull();
+  });
 });
-

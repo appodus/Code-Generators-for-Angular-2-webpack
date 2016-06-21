@@ -1,30 +1,37 @@
 import {
-    async,
-    beforeEachProviders,
-    describe,
-    ddescribe,
-    expect,
-    iit,
-    it,
-    inject
+  async,
+  beforeEachProviders,
+  describe,
+  ddescribe,
+  expect,
+  iit,
+  it,
+  inject
 } from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+
+import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { provide, Component } from '@angular/core';
 import { {{className}} } from './{{directiveName}}.directive';
 
 @Component({
-    selector: 'test-component',
-    template: `<div {{directiveName}}></div>`,
-    directives: [{{className}}]
+  selector: 'test-component',
+  template: `<div {{directiveName}}></div>`,
+  directives: [{{className}}]
 })
-class TestComponent {}
+class TestComponent {
+}
 
 describe('{{className}} Directive', () => {
-    beforeEachProviders((): any[] => [{{className}}]);
 
-    it('should ...', async(inject([TestComponentBuilder], (tcb:TestComponentBuilder) => {
-        return tcb.createAsync(TestComponent).then((fixture: ComponentFixture<any>) => {
-            fixture.detectChanges();
-        });
-    })));
+  let tcb: TestComponentBuilder;
+  beforeEachProviders((): any[] => [{{className}}]);
+  beforeEach(inject([TestComponentBuilder], (_tcb: TestComponentBuilder) => {
+    tcb = _tcb;
+  }));
+
+  it('should ...', async(inject([], () => {
+    return tcb.createAsync(TestComponent).then((fixture: ComponentFixture<any>) => {
+      fixture.detectChanges();
+    });
+  })));
 });

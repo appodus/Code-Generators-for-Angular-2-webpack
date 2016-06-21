@@ -1,17 +1,22 @@
 import {
-    beforeEachProviders,
-    it,
-    describe,
-    expect,
-    inject
+  beforeEachProviders,
+  it,
+  describe,
+  expect,
+  inject
 } from '@angular/core/testing';
+
 import { {{className}} } from './{{serviceName}}.service';
 
 describe('{{className}} Service', () => {
-    beforeEachProviders(() => [{{className}}]);
 
-    it('should ...',
-        inject([{{className}}], (service: {{className}}) => {
-            expect(service).toBeTruthy();
-    }));
+  let service: {{className}};
+  beforeEachProviders(() => [{{className}}]);
+  beforeEach(inject([{{className}}], (_service: {{className}}) => {
+    service = _service;
+  }));
+
+  it('should ...', () => {
+    expect(service).toBeTruthy();
+  });
 });
