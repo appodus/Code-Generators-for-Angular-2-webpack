@@ -4,9 +4,9 @@
 This is an ultra-simple cli tool for generating Angular2 component, directive, service and pipe scaffolding, with naming conventions 
 taken from the [Angular 2 Style Guide](https://angular.io/styleguide)
 
-Recommanded Angular 2 webpack starter seeds:[AngularClass/angular2-webpack-starter](https://github.com/AngularClass/angular2-webpack-starter) and [angular/angular2-seed](https://github.com/angular/angular2-seed)
+Recommended Angular 2 webpack starter seeds: [AngularClass/angular2-webpack-starter](https://github.com/AngularClass/angular2-webpack-starter) and [angular/angular2-seed](https://github.com/angular/angular2-seed)
 
-What is the difference between this generator and angular-cli? The anwser is that this generator is ultra-simple and that it can work anywhere, Angular-cli's generator can only work in an project generated with Angular-cli. It is more like live templates in Webstorm, but you insert your live template through command lines and they come in a set ready for you to start coding right away.
+What is the difference between this generator and angular-cli? The answer is that this generator is ultra-simple and that it can work anywhere, Angular-cli's generator can only work in an project generated with Angular-cli. It is more like live templates in WebStorm/Intellij, but you insert your live template through command lines and they come in a set ready for you to start coding right away.
 
 This project is an extension of [michaelbromley/cmpg](https://github.com/michaelbromley/cmpg) and the templates come from [angular-cli](https://github.com/angular/angular-cli).
 
