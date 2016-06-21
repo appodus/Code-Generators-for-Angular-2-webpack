@@ -99,8 +99,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'foo-selector',
-  template: './foo-selector.component.html',
-  styles: ['./foo-selector.scss']
+  templateUrl: './foo-selector.component.html',
+  styleUrls: ['./foo-selector.scss']
 })
 export class FooSelectorComponent {
 }
