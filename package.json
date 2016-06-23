@@ -9,6 +9,14 @@
   "bin": {
     "ng-wp": "./index.js"
   },
+  "keywords": [
+    "angular 2",
+    "ng2",
+    "angular-cli",
+    "generator",
+    "webpack",
+    "angular"
+  ],
   "author": "Rex Ye <rexebin@gmail.com>",
   "license": "MIT",
   "dependencies": {
